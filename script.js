@@ -11,7 +11,7 @@ function createWindow() {
         show: false,
         width: 1024,
         height: 768,
-        //icon: __dirname + '/media/icon.png',
+        //icon: path.join(__dirname, 'media', 'icon.png'),
         titleBarStyle: 'hidden',
         webPreferences:{
             preload: path.join(__dirname, 'browser.js'),
