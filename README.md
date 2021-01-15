@@ -1,9 +1,11 @@
-# <img src="media/Icon.png" width="45" align="left">&nbsp;Youtb
-
-> Unofficial Youtube app
+# <img src="media/icon.png" width="45" align="left">&nbsp;Youtb Unofficial Youtube app
 
 <br>
-[![](media/screenshot.png)](https://github.com/sindresorhus/caprine/releases/latest)
+<a href="https://github.com/sindresorhus/caprine/releases/latest">
+<img src="media/screenshot.png" width="500" align="left">
+</a>
+<br/>
+
 
 *Requires OS X 10.8+ and Linux. Windows support planned.*
 
