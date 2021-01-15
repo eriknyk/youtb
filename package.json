@@ -1,0 +1,22 @@
+{
+  "name": "youtb",
+  "productName": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "electron-better-ipc": "^1.1.1",
+    "electron-util": "^0.14.2"
+  },
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-packager": "^15.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --ignore='^/media$' --prune --asar --platform=darwin --arch=x64 --icon=media/Icon.icns --app-bundle-id=com.maveriks.youtb --sign='Developer ID Application: Erik Amaru Ortiz (YG56YK5007)' --app-version=$npm_package_version --electron-version=$npm_package_electronVersion && cd dist/Youtb-darwin-x64 && zip -ryXq ../Youtb-${npm_package_version}.zip Youtb.app"
+  },
+  "author": "",
+  "license": "ISC"
+}
