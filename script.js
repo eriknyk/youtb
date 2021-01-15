@@ -12,14 +12,17 @@ function createWindow() {
         width: 1024,
         height: 768,
         //icon: __dirname + '/media/icon.png',
-        titleBarStyle: 'hiddenInset',
+        titleBarStyle: 'hidden',
         webPreferences:{
             preload: path.join(__dirname, 'browser.js'),
-			nativeWindowOpen: true,
-			contextIsolation: true,
+			//nativeWindowOpen: true,
+			//contextIsolation: true,
+            // fails without this because of CommonJS script detection
+            nodeIntegration: false,
+            // required for Facebook active ping thingy
             webSecurity: true,
             plugins: true,
-            enableRemoteModule: false
+            enableRemoteModule: true
         }
     });
     win.loadURL('https://youtube.com', {
@@ -34,7 +37,7 @@ function createWindow() {
 app.on('ready', function () {
     Menu.setApplicationMenu(appMenu);
     mainWindow = createWindow();
-    //mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     const page = mainWindow.webContents;
 

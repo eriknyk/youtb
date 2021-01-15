@@ -3,7 +3,7 @@
   "productName": "",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "dependencies": {
     "electron-better-ipc": "^1.1.1",
     "electron-util": "^0.14.2"
