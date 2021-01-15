@@ -1,12 +1,15 @@
 # <img src="media/icon.png" width="45" align="left">&nbsp;Youtb Unofficial Youtube app
 
 <br>
+<div align="center">
 <a href="https://github.com/sindresorhus/caprine/releases/latest">
-<img src="media/screenshot.png" width="500" align="left">
+<img src="media/screenshot.png" align="left">
 </a>
-<br/>
+</div>
+<br>
+<br>
 
-
+---
 *Requires OS X 10.8+ and Linux. Windows support planned.*
 
 ## Install
