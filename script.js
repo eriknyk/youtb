@@ -15,11 +15,9 @@ function createWindow() {
         titleBarStyle: 'hidden',
         webPreferences:{
             preload: path.join(__dirname, 'browser.js'),
-			//nativeWindowOpen: true,
-			//contextIsolation: true,
-            // fails without this because of CommonJS script detection
+            //nativeWindowOpen: true,
+            //contextIsolation: true,
             nodeIntegration: false,
-            // required for Facebook active ping thingy
             webSecurity: true,
             plugins: true,
             enableRemoteModule: true
@@ -37,14 +35,14 @@ function createWindow() {
 app.on('ready', function () {
     Menu.setApplicationMenu(appMenu);
     mainWindow = createWindow();
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
     const page = mainWindow.webContents;
 
-	page.on('dom-ready', function () {
-		page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
-		mainWindow.show();
-	});
+    page.on('dom-ready', function () {
+        page.insertCSS(fs.readFileSync(path.join(__dirname, 'browser.css'), 'utf8'));
+        mainWindow.show();
+    });
 });
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') {
