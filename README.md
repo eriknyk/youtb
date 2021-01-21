@@ -2,15 +2,25 @@
 
 <br>
 <div align="center">
-<a href="https://github.com/sindresorhus/caprine/releases/latest">
+<a href="https://github.com/eriknyk/youtb/releases/latest">
 <img src="media/screenshot.png" align="left">
 </a>
 </div>
 <br>
 <br>
 
+<br>
+<div align="center">
+<a href="https://github.com/eriknyk/youtb/releases/latest">
+<img src="media/linux_screenshot.png" align="left">
+</a>
+</div>
+<br>
+<br>
+
+
 ---
-*Requires OS X 10.8+ and Windows. Linux support planned.*
+*Requires OS X 10.8+ and Windows and Linux (*tested in ubuntu)
 
 ## Install
 
@@ -23,10 +33,10 @@ On Linux, unzip to some location. To add a shortcut to the application, create a
 ```
 [Desktop Entry]
 Name=youtb
-Exec=/full/path/to/folder/youtb
+Exec=/full/path/to/folder/Youtb
 Terminal=false
 Type=Application
-Icon=/full/path/to/folder/resources/app/media/Icon.png
+Icon=/full/path/to/folder/icon.png
 
 ```
 

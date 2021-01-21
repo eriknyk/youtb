@@ -1,4 +1,6 @@
 const {app, Menu, BrowserWindow} = require('electron');
+const {is} = require('electron-util');
+
 const path = require('path');
 const fs = require('fs');
 const appMenu = require('./menu');
@@ -11,7 +13,7 @@ function createWindow() {
         show: false,
         width: 1024,
         height: 768,
-        //icon: path.join(__dirname, 'media', 'icon.png'),
+        icon: is.linux ? path.join(__dirname, 'media', 'icon.png') : undefined,
         titleBarStyle: 'hidden',
         webPreferences:{
             preload: path.join(__dirname, 'browser.js'),
