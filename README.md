@@ -9,6 +9,10 @@ Running in Ubuntu Linux
 
 [![youtb in ubuntu](media/linux_screenshot.png)](https://github.com/eriknyk/youtb/releases/latest)
 
+Running in Windows
+
+[![youtb in Windows](media/windows_screenshot.png)](https://github.com/eriknyk/youtb/releases/latest)
+
 
 
 
