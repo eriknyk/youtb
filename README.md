@@ -10,7 +10,7 @@
 <br>
 
 ---
-*Requires OS X 10.8+ and Linux. Windows support planned.*
+*Requires OS X 10.8+ and Windows. Linux support planned.*
 
 ## Install
 
