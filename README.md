@@ -1,21 +1,15 @@
 # <img src="media/icon.png" width="45" align="left">&nbsp;Youtb Unofficial Youtube app
 
-<br>
-<a href="https://github.com/eriknyk/youtb/releases/latest">
-  <img src="media/screenshot.png" align="left" width="846">
-</a>
-
 
 Running in MacOS
 
-
-
-<a href="https://github.com/eriknyk/youtb/releases/latest">
-  <img src="media/linux_screenshot.png" align="left" width="846">
-</a>
-
+[![youtb in mac](media/screenshot.png)](https://github.com/eriknyk/youtb/releases/latest)
 
 Running in Ubuntu Linux
+
+[![youtb in ubuntu](media/linux_screenshot.png)](https://github.com/eriknyk/youtb/releases/latest)
+
+
 
 
 ---
