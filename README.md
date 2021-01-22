@@ -48,7 +48,7 @@ Built with [Electron](http://electron.atom.io).
 - Build: `$ npm run build`
 
 ## Known issues
-- In live streamings, the chat section is not working, instead you will see a message like: `Oh no! It looks like you're using an older version of your browser. Please update it to use live chat.` I'm still investigating howto fix that, or feel free to contribute fixing it.
+- In live streamings, the chat section is not working, instead you will see a message like: `Oh no! It looks like you're using an older version of your browser. Please update it to use live chat.` *Just close the chat panel by now*, I'm still investigating howto fix that, or feel free to contribute fixing it.
 
 ## License
 
