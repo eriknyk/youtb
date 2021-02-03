@@ -1,9 +1,13 @@
 html, body {
     -ms-overflow-style: scrollbar !important;
 }
-.ytd-app {
+#masthead-container {
     -webkit-app-region: drag !important;
 }
 .ytd-masthead {
     padding-top: 4px !important;
+}
+
+ytd-searchbox.ytd-masthead {
+    margin: 0 0 0 0 !important;
 }
