@@ -2,8 +2,13 @@ html, body {
     -ms-overflow-style: scrollbar !important;
 }
 #masthead-container {
-    -webkit-app-region: drag !important;
+    -webkit-app-region: drag;
 }
+
+#search-input.ytd-searchbox-spt input {
+    -webkit-app-region: no-drag !important;
+}
+
 .ytd-masthead {
     padding-top: 4px !important;
 }
