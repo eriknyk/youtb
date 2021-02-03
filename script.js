@@ -37,7 +37,7 @@ function createWindow() {
 app.on('ready', function () {
     Menu.setApplicationMenu(appMenu);
     mainWindow = createWindow();
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
     const page = mainWindow.webContents;
 
