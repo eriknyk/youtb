@@ -6,6 +6,7 @@
   "main": "script.js",
   "dependencies": {
     "electron-better-ipc": "^1.1.1",
+    "electron-tabs": "^0.15.0",
     "electron-util": "^0.14.2"
   },
   "devDependencies": {

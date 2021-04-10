@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtb</title>
+  <link rel="stylesheet" href="./tabs.css">
+</head>
+<body style="margin:0">
+
+<div class="etabs-tabgroup" style="margin-left: 70px;margin-top: 0px;">
+  <div class="etabs-tabs"></div>
+  <div class="etabs-buttons"></div>
+</div>
+<div class="etabs-views"></div>
+
+
+<script>
+  const TabGroup = require('electron-tabs');
+
+  let tabGroup = new TabGroup({
+    newTab: {
+	    title: 'Youtube',
+	    src: 'http://youtube.com',
+		  webviewAttributes: {
+			  useragent: 'Chrome'
+		  }
+    }
+  });
+  tabGroup.on("tab-added", (tab, tabGroup) => { 
+    tab.on('webview-dom-ready', onTabReady);
+  });
+
+
+  let tab = tabGroup.addTab({
+    title: 'Youtube',
+    src: 'http://youtube.com',
+  	webviewAttributes: {
+  		useragent: 'Chrome'
+  	},
+    visible: true,
+    active: true
+  });
+  tab.on('webview-dom-ready', onTabReady);
+
+  function onTabReady(t) {
+    var injectJs = `var b = document.createElement('button');
+    b.classList.add('yt-icon-button');
+    b.style.width = '30px';
+    b.style.height = '30px';
+    b.innerHTML = '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 24; height: 24;"><g class="style-scope iron-icon"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="style-scope iron-icon"></path></g></svg>'
+    b.onclick = function() { window.history.back() };
+    document.getElementById('center').prepend(b);
+    document.getElementsByTagName('ytd-searchbox')[0].style.margin = '0 0 0 0';`;
+    
+    t.webview.executeJavaScript(injectJs, false);
+    t.webview.insertCss('ytd-searchbox.ytd-masthead { margin: 0 0 0 0 !important; }')
+  }
+</script>
+</body>
+</html>
